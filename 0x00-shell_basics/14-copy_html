@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -type f -exec cp -u -n {} ../ \
+cp -u $(find . -name "*.html" -type f -newer ../) ../
